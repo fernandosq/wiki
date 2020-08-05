@@ -14,15 +14,17 @@
                 <h2>Wiki</h2>
                 <form>
                     <input class="search" type="text" name="q" placeholder="Search Encyclopedia">
+
+
                 </form>
                 <div>
                     <a href="{% url 'index' %}">Home</a>
                 </div>
                 <div>
-                    <a href="{% url 'new_page' %}"></a> Create New Page
+                    <a href="{% url 'create' %}" ></a> Create New Page
                 </div>
                 <div>
-                    Random Page
+                   <a href="{% url 'random' %}"></a> Random Page
                 </div>
                 {% block nav %}
                 {% endblock %}
